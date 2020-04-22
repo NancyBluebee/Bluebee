@@ -1,0 +1,36 @@
+SELECT COUNT(*) FROM `students` WHERE dept='商業經營科'
+
+SELECT id,uni_id,name,dept FROM `students` WHERE dept='商業經營科'
+
+
+SELECT max(uni_id) as '學號平均', count(*) AS "筆數" FROM students WHERE id>=11 && id <=20
+
+SELECT min(uni_id) as '學號平均', count(*) AS "筆數" FROM students WHERE id>=11 && id <=20
+
+SELECT * FROM `students` WHERE left(`addr`,3)="台中縣"
+
+SELECT name, right(`class_num`,2) as 'num', dept FROM `students` WHERE LEFT(`class_num`,3)='101'
+
+SELECT name, right(`class_num`,2) as 'first name', dept FROM `students` WHERE LEFT(`name`,1)='王'
+
+SELECT replace(`name`, substring(`name`,2,1),'x') as 'name' FROM `students` WHERE LEFT(`class_num`,3)='101'
+======
+SELECT 
+	left(`name`,1) as '姓' ,
+    right(`name`,2) as '名字' , 
+    birthday as '生日',
+    left(`addr`,3) as '縣市',
+    CASE 
+		 WHEN substring(`nat_id`,2,1) = '1' THEN '男' 
+         WHEN substring(`nat_id`,2,1) = '2' THEN '女' 
+	END as '性別'
+
+FROM 
+	`students` 
+WHERE 
+	left(`class_num`,3)='101' && 
+    dept='商業經營科'
+=======
+http://220.128.133.15/mackliu/bcsa/q2_set1.php
+
+乙級考試的資料

@@ -34,3 +34,6 @@ WHERE
 http://220.128.133.15/mackliu/bcsa/q2_set1.php
 
 乙級考試的資料
+=======
+MYSQL的查詢語法 
+https://www.w3schools.com/sql/
